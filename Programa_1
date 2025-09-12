@@ -1,0 +1,23 @@
+def clasificar(palabra):
+    if palabra.isdigit():  # solo números
+        return "Número entero"
+    elif palabra.isalpha():  # solo letras
+        if palabra.islower():
+            return "Palabra en minúsculas"
+        elif palabra.isupper():
+            return "Palabra en MAYÚSCULAS"
+        else:
+            return "Palabra"
+    elif palabra.isalnum():  # letras y números
+        return "Compuesta (letras y números)"
+    else:
+        return "Otro tipo (símbolos)"
+
+while True:
+    texto = input("Escribe algo: ")
+    if texto.lower() == "salir":
+        print("Saliendo del programa...")
+        break
+
+    for palabra in texto.split():
+        print(palabra, "->", clasificar(palabra))   
