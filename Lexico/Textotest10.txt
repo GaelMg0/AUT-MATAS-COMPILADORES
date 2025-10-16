@@ -1,0 +1,8 @@
+int main() {
+    int contador = 0;
+    float promedio;
+    if (contador < 10) {
+        promedio = contador / 2.0;
+        return promedio;
+    }
+}

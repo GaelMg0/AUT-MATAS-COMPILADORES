@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+// Este programa imprime un saludo
+int main() {
+    printf("Hola mundo\n");
+    /* Este es un comentario
+       de varias líneas */
+    printf("Bienvenido al lenguaje C");
+    return 0;
+}
